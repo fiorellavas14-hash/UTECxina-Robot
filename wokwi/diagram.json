@@ -1,0 +1,289 @@
+{
+  "version": 1,
+  "author": "UTECxina",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-esp32-devkit-c-v4",
+      "id": "esp",
+      "top": 0,
+      "left": 0,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-hc-sr04",
+      "id": "hc1",
+      "top": -40,
+      "left": 260,
+      "attrs": {
+        "distance": "200"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r_echo_1k",
+      "top": 100,
+      "left": 250,
+      "attrs": {
+        "value": "1000"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r_echo_2k",
+      "top": 140,
+      "left": 250,
+      "attrs": {
+        "value": "2000"
+      }
+    },
+    {
+      "type": "wokwi-servo",
+      "id": "servo1",
+      "top": 180,
+      "left": 290,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-rgb-led",
+      "id": "rgb1",
+      "top": 40,
+      "left": -320,
+      "attrs": {
+        "common": "cathode"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r_red",
+      "top": 10,
+      "left": -200,
+      "attrs": {
+        "value": "220"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r_green",
+      "top": 50,
+      "left": -200,
+      "attrs": {
+        "value": "220"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r_blue",
+      "top": 90,
+      "left": -200,
+      "attrs": {
+        "value": "220"
+      }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn1",
+      "top": 190,
+      "left": -220,
+      "attrs": {
+        "color": "green",
+        "label": "B1 Iniciar"
+      }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn2",
+      "top": 250,
+      "left": -220,
+      "attrs": {
+        "color": "red",
+        "label": "B2 Cancelar"
+      }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn3",
+      "top": 340,
+      "left": 230,
+      "attrs": {
+        "color": "blue",
+        "label": "B3 Repetir"
+      }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn4",
+      "top": 400,
+      "left": 230,
+      "attrs": {
+        "color": "yellow",
+        "label": "B4 Demo"
+      }
+    }
+  ],
+  "connections": [
+    [
+      "esp:TX",
+      "$serialMonitor:RX",
+      "",
+      []
+    ],
+    [
+      "esp:RX",
+      "$serialMonitor:TX",
+      "",
+      []
+    ],
+    [
+      "esp:25",
+      "r_red:1",
+      "red",
+      []
+    ],
+    [
+      "r_red:2",
+      "rgb1:R",
+      "red",
+      []
+    ],
+    [
+      "esp:26",
+      "r_green:1",
+      "green",
+      []
+    ],
+    [
+      "r_green:2",
+      "rgb1:G",
+      "green",
+      []
+    ],
+    [
+      "esp:27",
+      "r_blue:1",
+      "blue",
+      []
+    ],
+    [
+      "r_blue:2",
+      "rgb1:B",
+      "blue",
+      []
+    ],
+    [
+      "rgb1:COM",
+      "esp:GND.1",
+      "black",
+      []
+    ],
+    [
+      "esp:32",
+      "btn1:1.l",
+      "green",
+      []
+    ],
+    [
+      "btn1:2.l",
+      "esp:GND.1",
+      "black",
+      []
+    ],
+    [
+      "esp:33",
+      "btn2:1.l",
+      "orange",
+      []
+    ],
+    [
+      "btn2:2.l",
+      "esp:GND.1",
+      "black",
+      []
+    ],
+    [
+      "esp:21",
+      "btn3:1.l",
+      "blue",
+      []
+    ],
+    [
+      "btn3:2.l",
+      "esp:GND.3",
+      "black",
+      []
+    ],
+    [
+      "esp:22",
+      "btn4:1.l",
+      "gold",
+      []
+    ],
+    [
+      "btn4:2.l",
+      "esp:GND.3",
+      "black",
+      []
+    ],
+    [
+      "esp:5V",
+      "hc1:VCC",
+      "red",
+      []
+    ],
+    [
+      "esp:GND.2",
+      "hc1:GND",
+      "black",
+      []
+    ],
+    [
+      "esp:18",
+      "hc1:TRIG",
+      "purple",
+      []
+    ],
+    [
+      "hc1:ECHO",
+      "r_echo_1k:1",
+      "cyan",
+      []
+    ],
+    [
+      "r_echo_1k:2",
+      "esp:19",
+      "cyan",
+      []
+    ],
+    [
+      "esp:19",
+      "r_echo_2k:1",
+      "cyan",
+      []
+    ],
+    [
+      "r_echo_2k:2",
+      "esp:GND.2",
+      "black",
+      []
+    ],
+    [
+      "esp:23",
+      "servo1:PWM",
+      "orange",
+      []
+    ],
+    [
+      "esp:5V",
+      "servo1:V+",
+      "red",
+      []
+    ],
+    [
+      "esp:GND.3",
+      "servo1:GND",
+      "black",
+      []
+    ]
+  ],
+  "dependencies": {}
+}

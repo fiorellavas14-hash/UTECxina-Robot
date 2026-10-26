@@ -1,0 +1,3 @@
+C:/Users/fiore/Downloads/UTECxina_wokwi_v1/UTECxina_wokwi_v1/firmware_arduino_ide/UTECxina_ESP32/cmake-build-debug/CMakeFiles/UTECxina_ESP32.dir
+C:/Users/fiore/Downloads/UTECxina_wokwi_v1/UTECxina_wokwi_v1/firmware_arduino_ide/UTECxina_ESP32/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/fiore/Downloads/UTECxina_wokwi_v1/UTECxina_wokwi_v1/firmware_arduino_ide/UTECxina_ESP32/cmake-build-debug/CMakeFiles/rebuild_cache.dir

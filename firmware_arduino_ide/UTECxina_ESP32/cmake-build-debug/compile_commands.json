@@ -1,0 +1,8 @@
+[
+{
+  "directory": "C:/Users/fiore/Downloads/UTECxina_wokwi_v1/UTECxina_wokwi_v1/firmware_arduino_ide/UTECxina_ESP32/cmake-build-debug",
+  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.1\\bin\\mingw\\bin\\C__~1.EXE -IC:/Users/fiore/Downloads/UTECxina_wokwi_v1/UTECxina_wokwi_v1/firmware_arduino_ide/UTECxina_ESP32/. -g -std=gnu++14 -fdiagnostics-color=always -o CMakeFiles\\UTECxina_ESP32.dir\\UTECxina_ESP32.cpp.obj -c C:\\Users\\fiore\\Downloads\\UTECxina_wokwi_v1\\UTECxina_wokwi_v1\\firmware_arduino_ide\\UTECxina_ESP32\\UTECxina_ESP32.cpp",
+  "file": "C:/Users/fiore/Downloads/UTECxina_wokwi_v1/UTECxina_wokwi_v1/firmware_arduino_ide/UTECxina_ESP32/UTECxina_ESP32.cpp",
+  "output": "C:/Users/fiore/Downloads/UTECxina_wokwi_v1/UTECxina_wokwi_v1/firmware_arduino_ide/UTECxina_ESP32/cmake-build-debug/CMakeFiles/UTECxina_ESP32.dir/UTECxina_ESP32.cpp.obj"
+}
+]
